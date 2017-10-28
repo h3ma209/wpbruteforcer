@@ -5,7 +5,10 @@ import urllib
 import time
 import urllib2
 import os
-os.system('clear')
+if os.name == 'nt':
+	os.system('cls')
+else:	
+	os.system('clear')
 banner = """
  ██░ ██ ▓█████  ███▄ ▄███▓ ▄▄▄      
 ▓██░ ██▒▓█   ▀ ▓██▒▀█▀ ██▒▒████▄    
