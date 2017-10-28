@@ -26,7 +26,7 @@ print'\033[92m' + banner
 parser = argparse.ArgumentParser()
 parser.add_argument('-u','--user',help='username or admin')
 parser.add_argument('-w','--wordlist',help='specify the wordlist')
-parser.add_argument('-s','--server',help='server ip ex. 192.168.1.100')
+parser.add_argument('-s','--server',help='server ip ex. 192.168.1.100 or www.example.com')
 args = parser.parse_args()
 
 url = 'http://' + args.server + '/wp-login.php' #(1)
