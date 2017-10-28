@@ -1,2 +1,2 @@
-# wpbruteforcer
-make sure you put the server correctly use inspect element 
+lol i dont care what u do with it
+just always make sure u type the, correctly !!!!
